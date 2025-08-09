@@ -22,18 +22,18 @@
 Install globally so the `dotx` command is available system-wide:
 
 ```bash
-npm install -g dotx
+npm install -g dotxx
 # or
-yarn global add dotx
+yarn global add dotxx
 ```
 
 Or install as a project dependency and use with `npx`:
 
 ```bash
 # install locally
-npm install --save-dev dotx
+npm install --save-dev dotxx
 # run
-npx dotx
+npx dotxx
 ```
 
 > After installing globally, users can simply run `dotx`.

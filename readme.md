@@ -1,6 +1,6 @@
-# dotx
+# dotxx
 
-`dotx` is a tiny CLI that makes it easy to set environment variables from a JSON file into an existing `.env`-style file using the `@dotenvx/dotenvx` API.
+`dotxx` is a tiny CLI that makes it easy to set environment variables from a JSON file into an existing `.env`-style file using the `@dotenvx/dotenvx` API.
 
 ---
 

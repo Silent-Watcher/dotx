@@ -19,3 +19,8 @@ biome.json
 
 .husky
 .github
+
+.env.keys
+.nvmrc
+env.json
+.env.production

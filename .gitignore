@@ -2,3 +2,7 @@ node_modules
 coverage
 dist
 .vscode
+.env.keys
+.nvmrc
+env.json
+.env.production

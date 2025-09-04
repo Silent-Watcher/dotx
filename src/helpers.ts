@@ -1,16 +1,16 @@
-import dotnevx from "@dotenvx/dotenvx";
+import dotnevx from '@dotenvx/dotenvx';
 
 export function flattenInput(
-	input: Record<string, string | number | {}>,
+	input: Record<string, string | number | Record<string, unknown>>,
 ): Record<string, string> {
 	const result: Record<string, string> = {};
 
-	function flatten(obj: Record<string, any>, prefix = "") {
+	function flatten(obj: Record<string, any>, prefix = '') {
 		for (const key in obj) {
-			const newKey = prefix 
+			const newKey = prefix
 				? `${prefix.toUpperCase()}_${key.toUpperCase()}`
 				: key.toUpperCase();
-			if (typeof obj[key] === "object" && obj[key] !== null) {
+			if (typeof obj[key] === 'object' && obj[key] !== null) {
 				flatten(obj[key], newKey);
 			} else {
 				result[newKey] = String(obj[key]);
